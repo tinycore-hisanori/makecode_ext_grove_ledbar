@@ -21,7 +21,7 @@ namespace groveLedBar {
         return v
     }
 
-    unction send16(word: number) {
+    function send16(word: number) {
        // Mirror Seeed: clock output toggles each bit (0,1,0,1...) 
        word &= 0xFFFF
        let clkState = 0
