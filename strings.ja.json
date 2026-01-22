@@ -1,7 +1,0 @@
-{
-  "GROVE_LED_BAR_INIT": "LEDバーを初期化する クロック端子%clockPin、データ端子%dataPin、バー方向%greenToRed",
-  "GROVE_LED_BAR_INIT_DESC": "Grove LEDバーを初期化します。\nCLOCKピンとDATAピンを指定します。",
-
-  "GROVE_LED_BAR_SET_LEVEL": "レベル表示 %level",
-  "GROVE_LED_BAR_SET_LEVEL_DESC": "LEDバーの表示レベルを設定します（0〜10）。"
-}
