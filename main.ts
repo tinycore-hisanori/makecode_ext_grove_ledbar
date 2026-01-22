@@ -91,11 +91,11 @@ namespace groveLedBar {
      * @param greenToRed true: green->red direction
      */
     //% block="init Grove LED Bar clock %clockPin data %dataPin greenToRed %greenToRed"
-    //% block.loc.ja="LEDƒo[‰Šú‰» clock %clockPin data %dataPin Œü‚«(—Î¨Ô) %greenToRed"
-    //% jsdoc.loc.ja="Grove LEDƒo[‚ğ‰Šú‰»‚µ‚Ü‚·BCLOCKƒsƒ“‚ÆDATAƒsƒ“‚ğw’è‚µ‚Ü‚·B"
-    //% clockPin.loc.ja="ƒNƒƒbƒNƒsƒ“"
-    //% dataPin.loc.ja="ƒf[ƒ^ƒsƒ“"
-    //% greenToRed.loc.ja="•\¦•ûŒüi—Î¨Ôj"
+    //% block.loc.ja="LEDãƒãƒ¼åˆæœŸåŒ– clock %clockPin data %dataPin å‘ã(ç·‘â†’èµ¤) %greenToRed"
+    //% jsdoc.loc.ja="Grove LEDãƒãƒ¼ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚CLOCKãƒ”ãƒ³ã¨DATAãƒ”ãƒ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚"
+    //% clockPin.loc.ja="ã‚¯ãƒ­ãƒƒã‚¯ãƒ”ãƒ³"
+    //% dataPin.loc.ja="ãƒ‡ãƒ¼ã‚¿ãƒ”ãƒ³"
+    //% greenToRed.loc.ja="è¡¨ç¤ºæ–¹å‘ï¼ˆç·‘â†’èµ¤ï¼‰"
     export function init(clockPin: DigitalPin, dataPin: DigitalPin, greenToRed: boolean = false) {
         _clk = clockPin
         _dat = dataPin
