@@ -1,0 +1,13 @@
+{
+  "name": "pxt-grove-led-bar",
+  "version": "0.0.1",
+  "description": "Grove LED Bar (MY9221) driver for micro:bit MakeCode",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "main.ts"
+  ],
+  "public": true
+}
