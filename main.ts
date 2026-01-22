@@ -21,19 +21,18 @@ namespace groveLedBar {
         return v
     }
 
-    function send16(word: number) {
-        // Arduino reference shifts out MSB first across 16 cycles. :contentReference[oaicite:2]{index=2}
-        word &= 0xFFFF
-        for (let i = 0; i < 16; i++) {
-            const bit = (word & 0x8000) !== 0
-            pins.digitalWritePin(_dat, bit ? 1 : 0)
+    unction send16(word: number) {
+       // Mirror Seeed: clock output toggles each bit (0,1,0,1...) 
+       word &= 0xFFFF
+       let clkState = 0
+       for (let i = 0; i < 16; i++) {
+           const bit = (word & 0x8000) !== 0
+           pins.digitalWritePin(_dat, bit ? 1 : 0)
+           pins.digitalWritePin(_clk, clkState)
 
-            // Use a clean pulse (low->high) per bit.
-            pins.digitalWritePin(_clk, 0)
-            pins.digitalWritePin(_clk, 1)
-
-            word = (word << 1) & 0xFFFF
-        }
+           clkState ^= 1      // 0->1->0->1...
+           word = (word << 1) & 0xFFFF
+       }
     }
 
     function latch() {
