@@ -88,11 +88,14 @@ namespace groveLedBar {
      * Initialize Grove LED Bar.
      * @param clockPin CLOCK pin
      * @param dataPin DATA pin
-     * @param greenToRed true = green->red direction (reverse)
+     * @param greenToRed true: green->red direction
      */
-    //% block=%GROVE_LED_BAR_INIT%
-    //% clockPin.fieldEditor="gridpicker" clockPin.fieldOptions.columns=4
-    //% dataPin.fieldEditor="gridpicker" dataPin.fieldOptions.columns=4
+    //% block="init Grove LED Bar clock %clockPin data %dataPin greenToRed %greenToRed"
+    //% block.loc.ja="LEDバー初期化 clock %clockPin data %dataPin 向き(緑→赤) %greenToRed"
+    //% jsdoc.loc.ja="Grove LEDバーを初期化します。CLOCKピンとDATAピンを指定します。"
+    //% clockPin.loc.ja="クロックピン"
+    //% dataPin.loc.ja="データピン"
+    //% greenToRed.loc.ja="表示方向（緑→赤）"
     export function init(clockPin: DigitalPin, dataPin: DigitalPin, greenToRed: boolean = false) {
         _clk = clockPin
         _dat = dataPin
