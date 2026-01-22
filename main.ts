@@ -90,7 +90,7 @@ namespace groveLedBar {
      * @param dataPin DATA pin
      * @param greenToRed true = green->red direction (reverse)
      */
-    //% block="init Grove LED Bar clock %clockPin data %dataPin greenToRed %greenToRed"
+    //% block="GROVE_LED_BAR_INIT"
     //% clockPin.fieldEditor="gridpicker" clockPin.fieldOptions.columns=4
     //% dataPin.fieldEditor="gridpicker" dataPin.fieldOptions.columns=4
     export function init(clockPin: DigitalPin, dataPin: DigitalPin, greenToRed: boolean = false) {

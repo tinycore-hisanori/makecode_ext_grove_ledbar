@@ -1,0 +1,7 @@
+{
+  "GROVE_LED_BAR_INIT": "init Grove LED Bar clock %clockPin data %dataPin Direction %greenToRed",
+  "GROVE_LED_BAR_INIT_DESC": "Initialize Grove LED Bar.\nSpecify CLOCK and DATA pins.",
+
+  "GROVE_LED_BAR_SET_LEVEL": "set level %level",
+  "GROVE_LED_BAR_SET_LEVEL_DESC": "Set LED bar level (0 to 10)."
+}
