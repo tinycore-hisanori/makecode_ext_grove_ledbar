@@ -119,9 +119,12 @@ namespace groveLedBar {
     }
 
     /**
-     * Set bar level (0..10). Allows fractional values (e.g., 3.5).
+     * Set bar level (0..10).
      */
     //% block="set level %level"
+    //% block.loc.ja="LEDバーのレベル値 %level"
+    //% jsdoc.loc.ja="Grove LEDバーのレベル値をセットします(0-10)"
+    //% level.loc.ja="レベル値"
     export function setLevel(level: number) {
         if (!_inited) return
         level = clamp(level, 0, 10)
