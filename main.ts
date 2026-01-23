@@ -91,7 +91,7 @@ namespace groveLedBar {
      * @param greenToRed true: green->red direction
      */
     //% block="init Grove LED Bar clock %clockPin data %dataPin greenToRed %greenToRed"
-    //% block.loc.ja="LEDバー初期化 clock %clockPin data %dataPin 向き(緑→赤) %greenToRed"
+    //% block.loc.ja="LEDバー初期化 クロック端子(CLK1) %clockPin 、データ端子(D1) %dataPin 向き(緑→赤) %greenToRed"
     //% jsdoc.loc.ja="Grove LEDバーを初期化します。CLOCKピンとDATAピンを指定します。"
     //% clockPin.loc.ja="クロックピン"
     //% dataPin.loc.ja="データピン"
